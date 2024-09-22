@@ -44,14 +44,7 @@ public class PlayerController : MonoBehaviour
             offset = 0.125f; // Offset for right side of character
         }
         origin.x += offset;
-        RaycastHit2D raycast = Physics2D.Raycast(origin, dir, speed * Time.deltaTime);
-
-        if (raycast.collider != null && raycast.collider.gameObject.tag == "Collidable")
-        { // If raycast hits something tagged "Collidable"
-            float distance = Math.Abs(raycast.point.x - origin.x);
-            return distance;
-        }
-
+       
         return speed * Time.deltaTime;
     }
 
@@ -68,13 +61,6 @@ public class PlayerController : MonoBehaviour
             offset = -0.5f; // Offset for bottom side of character
         }
         origin.y += offset;
-        RaycastHit2D raycast = Physics2D.Raycast(origin, dir, speed * Time.deltaTime);
-
-        if (raycast.collider != null && raycast.collider.gameObject.tag == "Collidable")
-        { // If raycast hits something tagged "Collidable"
-            float distance = Math.Abs(raycast.point.y - origin.y);
-            return distance;
-        }
 
         return speed * Time.deltaTime;
     }
