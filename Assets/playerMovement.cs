@@ -50,6 +50,9 @@ public class PlayerController : MonoBehaviour
         { // If raycast hits something tagged "Collidable"
             float distance = Math.Abs(raycast.point.x - origin.x);
             return distance;
+        } else if(raycast.collider != null && raycast.collider.gameObject.tag == "Enterable")
+        {
+
         }
 
         return speed * Time.deltaTime;
@@ -74,6 +77,10 @@ public class PlayerController : MonoBehaviour
         { // If raycast hits something tagged "Collidable"
             float distance = Math.Abs(raycast.point.y - origin.y);
             return distance;
+        }
+        else if (raycast.collider != null && raycast.collider.gameObject.tag == "Enterable")
+        {
+
         }
 
         return speed * Time.deltaTime;

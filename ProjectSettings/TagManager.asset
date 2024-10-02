@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collidable
+  - Enterable
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3436323663
+    locked: 0
+  - name: AboveBackground
+    uniqueID: 1927867901
     locked: 0
   - name: Background
     uniqueID: 257899359
