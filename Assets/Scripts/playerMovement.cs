@@ -1,11 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     private float speed; // Player movement speed
+
+    public InventoryClass playerInventory;
 
     void Awake()
     {
@@ -13,6 +16,33 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        // Detect if the left mouse button was clicked
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Check for a clicked object using a raycast
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                //UnityEngine.Debug.Log("here");
+                // If the clicked object has an ItemPickup component
+                //public GameObject linked;
+               /* Item item = hit.collider.GetComponent<Item>();
+                
+                if (item != null)
+                {
+                    // Add the item to the player's inventory
+                    playerInventory.insertItem(item);
+
+                    // Destroy the item in the game world
+                    Destroy(hit.collider.gameObject);
+
+                   // Debug.Log("Picked up " + itemPickup.itemData.itemName);
+                }
+               */
+            }
+        }
+
         if (Input.GetKey(KeyCode.W))
         { // Controls movements in all four directions
             transform.Translate(Vector2.up * testVert(Vector2.up));
