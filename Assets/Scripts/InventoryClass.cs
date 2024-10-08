@@ -4,7 +4,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryClass : MonoBehaviour 
+public class InventoryClass : MonoBehaviour
 {
     public List<InventorySlot> itemList = new List<InventorySlot>();  // The list of items in the inventory
 
