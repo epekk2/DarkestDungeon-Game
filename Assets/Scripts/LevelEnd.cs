@@ -17,14 +17,14 @@ public class LevelEnd : MonoBehaviour
             SceneManager.LoadScene(nextScene);
         } else
         {
-            SceneManager.LoadScene("LevelSelection");
+            SceneManager.LoadScene("LevelSelect2");
         }
 
 
     }
     public void SelectLevel()
     {
-        SceneManager.LoadScene("LevelSelection");
+        SceneManager.LoadScene("LevelSelect2");
     }
 
     public void MainMenu()
