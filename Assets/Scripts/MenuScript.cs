@@ -32,6 +32,10 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+    public void playLevelThree()
+    {
+        SceneManager.LoadScene(6);
+    }
 
     public void QuitGame()
     {
