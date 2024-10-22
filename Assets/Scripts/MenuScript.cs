@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    //void Start()
-    //{
-        
-    //}
+    public levelManage gm1;
+    void Start()
+    {
+        //GameManager.Awake();
+        //GameManager.instance.Awake();
+
+    }
 
     //// Update is called once per frame
     //void Update()
     //{
-        
+
     //}
 
     public void PlayGame()
@@ -30,11 +34,18 @@ public class MenuScript : MonoBehaviour
 
     public void playLevelTwo()
     {
-        SceneManager.LoadScene(3);
+        if (levelManage.currentLevel >= 2)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
     public void playLevelThree()
     {
-        SceneManager.LoadScene(6);
+        if (levelManage.currentLevel >= 3)
+        {
+            SceneManager.LoadScene(6);
+        }
+
     }
 
     public void QuitGame()

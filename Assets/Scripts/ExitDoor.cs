@@ -12,6 +12,11 @@ public class ExitDoor : MonoBehaviour
         {
             return;
         }
+        Scene currentScene = SceneManager.GetActiveScene();
+        int currentSceneInd = currentScene.buildIndex;
+        levelManage.updateLevel(currentSceneInd);
+
+        //
         SceneManager.LoadScene(4);//Index for Level End scene
     }
 }
