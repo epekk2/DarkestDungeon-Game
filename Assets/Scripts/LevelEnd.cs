@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,8 +22,12 @@ public class LevelEnd : MonoBehaviour
             SceneManager.LoadScene(1);
         }
         */
+        Scene currentScene = SceneManager.GetActiveScene();//gets level end = 4, not scene before
 
-        SceneManager.LoadScene(3);
+        int nextSceneBuildIndex = levelManage.currentLevelBuildIndex;
+        SceneManager.LoadScene(nextSceneBuildIndex);
+        
+
     }
     public void SelectLevel()
     {
