@@ -12,7 +12,6 @@ public class ExitDoor : MonoBehaviour
         {
             return;
         }
-        //SceneManager.LoadScene(3);//Index for Level End scene
-        SceneManager.LoadScene("Level End");
+        SceneManager.LoadScene(4);//Index for Level End scene
     }
 }

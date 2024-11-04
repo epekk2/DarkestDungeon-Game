@@ -11,20 +11,22 @@ public class LevelEnd : MonoBehaviour
     
     public void NextLevel()
     {
+        /*
         int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
         if (SceneManager.GetSceneByBuildIndex(nextScene).IsValid())
         {
             SceneManager.LoadScene(nextScene);
         } else
         {
-            SceneManager.LoadScene("LevelSelect2");
+            SceneManager.LoadScene(1);
         }
+        */
 
-
+        SceneManager.LoadScene(3);
     }
     public void SelectLevel()
     {
-        SceneManager.LoadScene("LevelSelect2");
+        SceneManager.LoadScene(1);
     }
 
     public void MainMenu()
