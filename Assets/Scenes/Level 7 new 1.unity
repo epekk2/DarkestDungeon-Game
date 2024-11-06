@@ -5219,6 +5219,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &355815427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4082864715715105468, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_Name
+      value: Fire Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.32013
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.74483943
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639582999584216992, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4082864715715105468, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1345426184}
+  m_SourcePrefab: {fileID: 100100000, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5327,6 +5387,67 @@ MonoBehaviour:
   player: {fileID: 971092417}
   smoothSpeed: 0.125
   offset: {x: 0, y: 0, z: -10}
+--- !u!1001 &569606954
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 726144782798124072, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_Name
+      value: Water Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.4136224
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3139067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441265062175190480, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93785b925faa2814895663cbe366dfd6, type: 3}
 --- !u!1001 &648189767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7147,6 +7268,26 @@ Transform:
   - {fileID: 654628406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1345426183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4082864715715105468, guid: beb9c791eca44b44fb1ff226e0acab75, type: 3}
+  m_PrefabInstance: {fileID: 355815427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1345426184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345426183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a9201d43045c44dbfe693cc9807f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    itemName: Fire Potion
+    itemIcon: {fileID: 21300000, guid: 83669ad259d236b43be9d27ce056b9b0, type: 3}
 --- !u!1 &1474492060 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6020070605019034914, guid: dafda274c2ee5f3408a6511445fc4a5a, type: 3}
@@ -7695,8 +7836,10 @@ SceneRoots:
   - {fileID: 4401331233921314874}
   - {fileID: 193141133}
   - {fileID: 7971781502685506687}
+  - {fileID: 355815427}
   - {fileID: 1017073117}
   - {fileID: 1839417059}
   - {fileID: 1543855237}
   - {fileID: 1881070555}
   - {fileID: 648189767}
+  - {fileID: 569606954}
