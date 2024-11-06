@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class EnemyPatroll : MonoBehaviour
@@ -15,13 +16,22 @@ public class EnemyPatroll : MonoBehaviour
     void Update()
     {
         MoveToNextWaypoint();
-
+        
+        
+        
         if (IsOnRedTile())
         {
             Destroy(gameObject);  // Destroy the enemy
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Player"))
+        {
+            return;
+        }
+        SceneManager.LoadScene(1);//Index for Level Select Scene
+    }
     void MoveToNextWaypoint()
     {
         // Move the enemy towards the current waypoint

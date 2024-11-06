@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
@@ -52,6 +53,10 @@ public class PotionFunctions : MonoBehaviour
         {
             Destroy(entity);
             string entityType = entity.CompareTag("Player") ? "Player" : "Enemy";
+            if(entityType == "Player")
+            {
+                SceneManager.LoadScene(1);//Index for Level Select Scene.
+            }
             //Debug.Log($"{entityType} destroyed by red tile!");
         }
     }
