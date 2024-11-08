@@ -19,7 +19,7 @@ public class collectableObject : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (playerInventory != null)
+        if (playerInventory != null && playerInventory.itemList.Count < 5)
         {
             // Create a new item and add it to the player's inventory
             Item newItem = new Item(itemName, itemIcon);
