@@ -72,6 +72,10 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(11);
     }
+    public void playLevelTen()
+    {
+        SceneManager.LoadScene(12);
+    }
 
     public void QuitGame()
     {
