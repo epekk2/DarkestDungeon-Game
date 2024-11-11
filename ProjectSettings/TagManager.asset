@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collidable
   - Enemy
+  - Enterable
   layers:
   - Default
   - TransparentFX
@@ -43,9 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 257899359
+    locked: 0
   - name: Player
     uniqueID: 3436323663
     locked: 0
-  - name: Background
-    uniqueID: 257899359
+  - name: Above
+    uniqueID: 1509375095
     locked: 0
