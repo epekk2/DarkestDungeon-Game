@@ -19,8 +19,58 @@ public class MenuScript : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
 
+    }
+
+    public void goMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void playLevelOne()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void playLevelTwo()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void playLevelThree()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void playLevelFour()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void playLevelFive()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public void playLevelSix()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void playLevelSeven()
+    {
+        SceneManager.LoadScene(9);
+    }
+
+    public void playLevelEight()
+    {
+        SceneManager.LoadScene(10);
+    }
+
+    public void playLevelNine()
+    {
+        SceneManager.LoadScene(11);
     }
 
     public void QuitGame()

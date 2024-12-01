@@ -6,13 +6,17 @@ using UnityEngine.SceneManagement;
 public class ExitDoor : MonoBehaviour
 {
     // Start is called before the first frame update
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(!collision.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            return;
+            // Save this level as completed
+            int currentLevel = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt("Level_" + currentLevel + "_Completed", 1);
+            PlayerPrefs.Save();
+
+            // Load the level select scene
+            SceneManager.LoadScene(1); 
         }
-        //SceneManager.LoadScene(3);//Index for Level End scene
-        SceneManager.LoadScene("Level End");
     }
 }
